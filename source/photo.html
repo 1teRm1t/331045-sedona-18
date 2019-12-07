@@ -2,114 +2,160 @@
 <html lang="ru">
 
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
+  <meta charset="UTF-8">
+  <title>HTML Academy: Седона - Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <div class="wrapper">
+    <header class="page-header">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          Открыть меню
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html Academy</a>
+          </li>
+          <li class="main-nav__item main-nav__item--logo">
+            <a class="main-nav__logo" href="index.html">
+              <img src="img/logo-sedona-mobile.svg" width="102" height="84" alt="">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-	<header class="page-header">
-		<a class="page-header__logo" href="">
-			<img class="page-header__logo-image" src="" width="" height="" alt="">
-		</a>
-		<nav class="main-nav">
-			<button class="main-nav__toggle" type="button">
-				Открыть меню
-			</button>
-			<div class="main-nav__wrapper">
-				<ul class="main-nav__list site-list">
-					<li class="site-list__item">
-						<a href="index.html">Главная</a>
-					</li>
-					<li class="site-list__item">
-						<a>Фото и видео</a>
-					</li>
-					<li class="site-list__item">
-						<a href="form.html">Форма отзыва</a>
-					</li>
-					<li class="site-list__item">
-						<a href="#">Html Academy</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</header>
+    <main class="page-main-photo">
+      <div class="sedona-logo sedona-logo--photo">
+        <img src="img/bg-back-mobile@1x.jpg" width="768" height="389" alt="Гранд каньон">
+        <div class="sedona-logo__slice">
 
-	<main class="page-main-photo">
-		<div class="sedona-logo sedona-logo--photo">
-		</div>
-		<div class="page-main-photo__intro">
-			<h1 class="page-main-photo__title">Фото и видео</h1>
-			<p class="page-main-photo__subtitle">
-				Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
-			</p>
-		</div>
-		<ul class="photos">
-			<li class="photo">
-				<figure>
-					<img src="" alt="">
-					<figcaption>
+        </div>
+      </div>
+      <div class="page-main-photo__intro">
+        <h1 class="page-main-photo__title">Фото и видео</h1>
+        <p class="page-main-photo__subtitle">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
+        </p>
+      </div>
+      <ul class="photos">
+        <li class="photo">
+          <figure class="photo__item">
+            <img src="img/photo-sunset-mobile@1x.jpg" width="280" height="280" alt="">
+            <figcaption class="photo__text">
+              <div class="photo__text--description">
+                <h3 class="photo__title">Неродные просторы</h3>
+                <span class="photo__subtitle">Автор фото: Борис</span>
+              </div>
+              <div class="photo__text--like">
+                <!-- svg -->
+                <img src="img/icon-like.svg" alt="">
+                <span class="photo__likes">1350</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photo">
+          <figure class="photo__item">
+            <img src="img/photo-cactus-mobile@1x.jpg" width="280" height="280" alt="">
+            <figcaption class="photo__text">
+              <div class="photo__text--description">
+                <h3 class="photo__title">Местная растительность</h3>
+                <span class="photo__subtitle">Автор фото: Сергей</span>
+              </div>
+              <div class="photo__text--like">
+                <!-- svg -->
+                <img src="img/icon-like.svg" alt="">
+                <span class="photo__likes">143</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photo">
+          <figure class="photo__item">
+            <img src="img/photo-roads-mobile@1x.jpg" width="280" height="280" alt="">
+            <figcaption class="photo__text">
+              <div class="photo__text--description">
+                <h3 class="photo__title">Дорога на север</h3>
+                <span class="photo__subtitle">Автор фото: Петр</span>
+              </div>
+              <div class="photo__text--like">
+                <!-- svg -->
+                <img src="img/icon-like.svg" alt="">
+                <span class="photo__likes">96</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+        <li class="photo">
+          <figure class="photo__item">
+            <img src="img/photo-bridge-mobile@1x.jpg" width="280" height="280" alt="">
+            <figcaption class="photo__text">
+              <div class="photo__text--description">
+                <h3 class="photo__title">Мост дьявола</h3>
+                <span class="photo__subtitle">Автор фото: Антон</span>
+              </div>
+              <div class="photo__text--like">
+                <!-- svg -->
+                <img src="img/icon-like.svg" alt="">
+                <span class="photo__likes">254</span>
+              </div>
+            </figcaption>
+          </figure>
+        </li>
+      </ul>
 
-					</figcaption>
-				</figure>
-			</li>
-			<li class="photo">
-				<figure>
-					<img src="" alt="">
-					<figcaption>
+      <div class="doubt">
+        <h2 class="doubt__title">Вы еще сомневаетесь?</h2>
+        <p class="doubt__subtitle">
+          Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+        </p>
+      </div>
+      <section class="presentation">
+        <div class="presentation__image">
+          <video src="img/video-mobile@1x.jpg" width="320" height="201"></video>
+        </div>
+        <div class="presentation__controllers">
+          <button class="presentation__refresh"></button>
+          <div class="presentation__range"></div>
+          <button class="presentation__subs"></button>
+          <button class="presentation__full-screen"></button>
+        </div>
+      </section>
+    </main>
 
-					</figcaption>
-				</figure>
-			</li>
-			<li class="photo">
-				<figure>
-					<img src="" alt="">
-					<figcaption>
-
-					</figcaption>
-				</figure>
-			</li>
-			<li class="photo">
-				<figure>
-					<img src="" alt="">
-					<figcaption>
-
-					</figcaption>
-				</figure>
-			</li>
-		</ul>
-
-		<div class="doubt">
-			<h4>Вы еще сомневаетесь?</h4>
-			<p>
-				Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-			</p>
-		</div>
-		<div class="presentation">
-
-		</div>
-	</main>
-
-	<footer class="page-footer">
-		<p class="page-footer__hashtag">#visitsedona</p>
-		<div class="page-footer__social">
-			<ul class="social-list">
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--twitter" href="#"></a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--facebook" href="#"></a>
-				</li>
-				<li class="social-list__item">
-					<a class="social-list__link social-list__link--youtube" href="#"></a>
-				</li>
-			</ul>
-		</div>
-		<div class="page-footer__copyright">
-			<p class="page-footer__copyright-text">Разработано</p>
-			<a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
-		</div>
-	</footer>
+    <footer class="page-footer">
+      <p class="page-footer__hashtag">#visitsedona</p>
+      <div class="page-footer__social">
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--twitter" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--facebook" href="#"></a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link social-list__link--youtube" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright">
+        <p class="page-footer__copyright-text">Разработано</p>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru"></a>
+      </div>
+    </footer>
+  </div>
 
 </body>
 
